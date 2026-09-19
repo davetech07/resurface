@@ -1,5 +1,10 @@
 import { Stack } from "expo-router";
+import { ResurfaceProvider } from "../../context/ResurfaceContext";
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <ResurfaceProvider>
+      <Stack />
+    </ResurfaceProvider>
+  );
 }
